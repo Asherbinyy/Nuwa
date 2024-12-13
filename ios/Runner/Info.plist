@@ -6,6 +6,10 @@
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleDisplayName</key>
 	<string>Nuwa</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+    <string>We need access to your photo library to save sketches as PDFs.</string>
+    <key>NSDocumentsFolderUsageDescription</key>
+    <string>We need access to your documents folder to save PDFs.</string>
 	<key>CFBundleExecutable</key>
 	<string>$(EXECUTABLE_NAME)</string>
 	<key>CFBundleIdentifier</key>

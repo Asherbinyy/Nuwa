@@ -3,6 +3,7 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:injectable/injectable.dart';
 
+import '../../logger/app_logger.dart';
 import 'sketch_service_interface.dart';
 
 @LazySingleton(as: ISketchService)
@@ -16,6 +17,7 @@ class SketchService implements ISketchService {
     } else {
       _sketchPoints.add(Offset(x, y));
     }
+    logger('Recorded point: $x, $y');
     return List.from(_sketchPoints);
   }
 

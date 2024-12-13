@@ -44,7 +44,7 @@ extension GetItInjectableX on _i174.GetIt {
     gh.lazySingleton<_i356.IStylusConnection>(
         () => _i781.StylusConnectionService());
     gh.lazySingleton<_i775.IWordGenerator>(() => _i121.WordGeneratorService());
-    gh.lazySingleton<_i237.IPermissionHandler>(
+    gh.factory<_i237.IPermissionHandler>(
         () => _i237.PermissionsHandlerService());
     gh.factory<_i792.DashboardController>(
         () => _i792.DashboardController(gh<_i356.IStylusConnection>()));

@@ -17,7 +17,7 @@ class SketchPainter extends CustomPainter {
         canvas.drawLine(points[i], points[i + 1], paint);
       }
     }
-  }
+   }
 
   @override
   bool shouldRepaint(covariant CustomPainter oldDelegate) => true;
