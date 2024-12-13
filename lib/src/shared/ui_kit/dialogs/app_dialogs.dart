@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:nuwa/src/core/navigator/navigator.dart';
 import 'package:nuwa/src/core/resources/styles/app_colors.dart';
+import 'package:nuwa/src/core/utils/extensions/context_x.dart';
 import 'package:nuwa/src/core/utils/extensions/screen_spaces_x.dart';
 
 import '../animations/fade_transition_wrapper.dart';
@@ -26,7 +27,8 @@ class AppDialogs {
           backgroundColor: AppColors.white,
           child: FadeTransitionWrapper(
             child: Padding(
-              padding: EdgeInsets.all(60.toRad()),
+              padding:
+                  EdgeInsets.all(context.isMobile ? 24.toRad() : 60.toRad()),
               child: SizedBox(
                 width: 600.toW(),
                 child: child,

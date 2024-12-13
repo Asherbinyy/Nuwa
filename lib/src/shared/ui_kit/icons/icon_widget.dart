@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:nuwa/src/core/utils/extensions/context_x.dart';
 import 'package:nuwa/src/core/utils/extensions/screen_spaces_x.dart';
 
 class IconWidget extends StatelessWidget {
@@ -16,7 +17,7 @@ class IconWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return CircleAvatar(
-      radius: 100.toRad(),
+      radius: (context.isMobile ? 50 : 100).toRad(),
       backgroundColor: backgroundColor,
       child: child ??
           Image.asset(

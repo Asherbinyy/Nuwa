@@ -14,9 +14,10 @@ class AppStyles {
     double lineHeight = 1,
   }) {
     final height = lineHeight / (fontSize ?? 1);
+    final responsiveFontSize = fontSize?.toFS();
     return TextStyle(
       fontFamily: AppConstants.appFont,
-      fontSize: (fontSize ?? 20).toFS(),
+      fontSize: responsiveFontSize,
       fontWeight: fontWeight,
       color: color ?? AppColors.title,
       height: height,

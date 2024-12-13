@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:nuwa/src/core/navigator/go_generator.dart';
-import 'package:nuwa/src/core/navigator/named_routes.dart';
+import 'package:nuwa/src/core/utils/extensions/context_x.dart';
 
+import 'core/navigator/named_routes.dart';
 import 'core/navigator/navigator.dart';
 import 'core/resources/constants/app_constants.dart';
 import 'core/resources/styles/app_theme.dart';
@@ -13,7 +14,7 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ScreenUtilInit(
-      designSize: AppConstants.screenSize,
+      designSize: context.isMobile ? Size(540, 960) : AppConstants.screenSize,
       minTextAdapt: true,
       ensureScreenSize: true,
       builder: (_, child) {
