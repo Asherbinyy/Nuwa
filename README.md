@@ -13,8 +13,8 @@ NUWA is a Flutter-based application designed for stylus-enabled data collection,
     - Platforms: Android, iOS, Web, Linux, macOS
 ---
 
-## Visuals
-- **Video or GIF**: *[Placeholder for video showcasing app functionality]*
+## Preview
+- **Video**: *[Placeholder for video showcasing app functionality]*
 
 ---
 ## Features
